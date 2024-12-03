@@ -157,8 +157,6 @@ int main(int argc, char *argv[]) {
     // Copie des résultats du GPU vers le CPU
     cudaMemcpy(Mout, d_Mout, size, cudaMemcpyDeviceToHost);
 
-    // Optionnel : Affichage des résultats
-    //MatrixPrint(Mout, n, p);
 
     // Libération mémoire
     free(M1);
